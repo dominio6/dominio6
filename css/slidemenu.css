@@ -1,0 +1,6 @@
+* {margin:0; padding:0}
+.sm {list-style:none; width:940px; height:450px; display:block; overflow:hidden;
+  list-style:none;
+  margin-bottom:10px;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.50);}
+.sm li {float:left; display:inline; height:450px; overflow:hidden;}

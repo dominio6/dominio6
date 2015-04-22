@@ -1,0 +1,789 @@
+/*
+Design by CiberWolf18 Design
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+@font-face {
+  font-family: 'MuseoSans500Italic';
+  src: url("../font/MuseoSans_500_Italic-webfont.eot");
+  src: url("../font/MuseoSans_500_Italic-webfont.eot?iefix") format("eot"), url("../font/MuseoSans_500_Italic-webfont.woff") format("woff"), url("../font/MuseoSans_500_Italic-webfont.ttf") format("truetype"), url("../font/MuseoSans_500_Italic-webfont.svg#webfontprFOYbU7") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans500';
+  src: url("../font/MuseoSans_500-webfont.eot");
+  src: url("../font/MuseoSans_500-webfont.eot?iefix") format("eot"), url("../font/MuseoSans_500-webfont.woff") format("woff"), url("../font/MuseoSans_500-webfont.ttf") format("truetype"), url("../font/MuseoSans_500-webfont.svg#webfontkQkWxTED") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'AldoSemiBold';
+    src: url('../font/aldo_pc-webfont.eot');
+    src: url('../font/aldo_pc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/aldo_pc-webfont.woff') format('woff'),
+         url('../font/aldo_pc-webfont.ttf') format('truetype'),
+         url('../font/aldo_pc-webfont.svg#AldoSemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* =============================================================================
+Html5doctor.com Reset Stylesheet - Richard Clark - http://richclarkdesign.com
+============================================================================= */
+html, body, div{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {  background: url(../img/fonGradinet.jpg) top fixed;
+background-color: #E5E5E5;
+  }
+
+::selection { background: #0066CC ; color: #FFFFFF; }
+::-moz-selection { background: #0066CC; color: #FFFFFF; }
+
+div.logo {
+  background: #012F67 url(../escudo.png)no-repeat  right;
+  margin-left: 91px;
+  color: #FFCC00;
+  font-weight: bold;
+     font-family: Disney,century gothic;
+       text-shadow:1px 1px 1px rgba(1,0,0,1);
+  font-size: 30px;
+  width: 970px;
+ height: 135px;
+}
+
+div.shield {
+  background: url(../real.png)no-repeat  left bottom;
+ height: 135px;
+}
+
+
+#pass1 {background:url(../img/pasport1.png)  no-repeat;
+ width: 494px;
+ height:452px;
+ padding-right:0px;
+ margin-right:0px;
+}
+#pass2 {background:url(../img/pasport2.png)  no-repeat;
+ width: 494px;
+ height:452px;
+ padding-right:0px;
+ margin-right:0px;
+}
+.reference .phone {
+  padding-left: 30px;
+  background: url(../img/foot_contact_icon.png) no-repeat;
+  background-position: 10px 0px;
+}
+.reference a {
+  color: #666;
+  padding-left: 30px;
+  margin: 0px;
+  background: url(../img/foot_contact_icon.png) no-repeat;
+  background-position: 10px -17px;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 960px;
+}
+.reference {
+   font-family: 'AldoSemiBold';
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 20px;
+  background: url(../img/bgFoot.png) repeat-x top Transparent;
+  color: #666;
+  font-family: 'century gothic', arial, sans-serif;
+  font-size: 11px;
+  z-index: 2;
+}
+
+
+.container {
+	background:#ffffff;
+	display:table;
+	width:auto;
+	padding:0 50px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:75px;
+	margin-bottom:90px;
+	border:1px solid #cccccc;
+	max-width:90%;
+	-moz-box-shadow: 0 0 9px #999999;
+	-webkit-box-shadow: 0 0 9px #999999;
+	box-shadow: 0 0 9px #999999;
+    }
+
+#midiv {
+
+    position: absolute;
+    /* background-color: #FFFFFF;*/
+
+        left: 5%; /*esquina izquierda al centro */
+
+	    height: 300px; /*alto      */
+	    margin-top: -200px;    /* 400px/2=200px, especificamos la posición central entre las 2 esquinas calculando la mitad del total  */
+	    width: 90%; /*ancho     */
+	   /*  margin-left: -576px;    600px/2=300px, especificamos la posición central entre las 2 esquinas calculando la mitad del total  */
+}
+
+#divtxt {
+    position: absolute;
+
+     /*background: url(../real.png) left bottom no-repeat ;*/
+    background-color: #FFFFFF;
+    left: 5%; /*esquina izquierda al centro */
+    top: 80px; /*esquina superior al centro     */
+	width: 90%; /*el ancho del div*/
+      min-width: 800px;
+    /*height: 950px; */
+    border:#000000 8px solid;
+
+	 margin-bottom:100px; /*se define el ancho lateral automático, esto quiere decir que el ancho de los dos lados será igual    */
+    z-index:0;
+}
+
+#apDiv6 {
+	/*position:absolute;
+    background-color: #FFFFFF;*/
+    margin-top: 0px;
+    margin-bottom: 50px;
+	width:auto;
+    /*OVERFLOW: auto;*/
+    z-index:1;
+    font-family:Disney,century gothic;
+    color:#000000;
+    font-size:15px;
+    /*font-weight: bold;*/
+}
+
+#content_bot {
+    position:absolute;
+    /*top: 950px;*/
+	background:url(../img/content_bot.png) no-repeat 0px 0px;
+	height: 71px;
+    width: 100%;
+    z-index:0;
+}
+
+#shadow_con_bot{
+    position:absolute;
+    /*top: 959px;*/
+	background: url(../img/shadow3.png) no-repeat  center 58px;
+	height: 119px;
+    width: 100%;
+    z-index:-2;
+
+}
+
+hr {
+border: 0;
+height: 1px;
+color: #339933;
+background-color: #CCCCCC;
+}
+
+.subtitle { text-align: left; text-transform: capitalize; font-weight: bold; width: 100%; color: #3399CC;  border-bottom: #A0A0A0 solid 1px;
+    background: url(team.png )  no-repeat right;
+}
+
+.vineta {
+    margin-left: 50px;
+    font-weight: bold;
+    color: #3D7AB8;
+    padding: 0 0 4px 22px;
+    background: url(yes.png) no-repeat left center;
+}
+
+.vineno {
+    margin-left: 50px;
+    color: #FF6600;
+    padding: 0 0 4px 22px;
+    background: url(not.png) no-repeat left center;
+}
+.icoalert {
+    margin-left: 0px;
+    padding: 0 0 0px 22px;
+    background: url(ico_alerta.png) no-repeat left center;
+}
+.icoaviso {
+    margin-left: 0px;
+    padding: 0 0 1px 22px;
+    background: url(ico_aviso.png) no-repeat left center;
+}
+.icoinf {
+    margin-left: 0px;
+    padding: 0 0 1px 22px;
+    background: url(ico_inf.png) no-repeat left center;
+}
+.hand {
+    margin-left: 10px;
+    padding: 0 0 1px 22px;
+    background: url(ico_hand.png) no-repeat left center;
+}
+.good {
+    margin-left: 10px;
+    padding: 0 0 1px 22px;
+    background: url(ico_check.png) no-repeat left center;
+}
+.bad {
+    margin-left: 10px;
+    padding: 0 0 1px 22px;
+    background: url(ico_sing.png) no-repeat left center;
+}
+.block {
+    margin-left: 10px;
+    padding: 0 0 1px 22px;
+    background: url(ico_block.png) no-repeat left center;
+}
+.tema {
+  padding: 0 0 7px 22px;
+  background: url(team.png) no-repeat left center;
+}
+
+.ucp {
+  padding: 0 0 0 22px;
+  background: url(ucp.png) no-repeat left center;
+}
+
+.exit {
+  padding: 0 0 0 22px;
+  background: url(exit.png) no-repeat left center;
+}
+.time {
+  padding: 0 0 0 22px;
+  background: url(time.png) no-repeat left center;
+}
+.delete {
+  padding: 0 0 0 22px;
+  background: url(delete.png) no-repeat left center;
+}
+.editar {
+  padding: 0 0 0 22px;
+  background: url(editar.png) no-repeat left center;
+}
+.leer {
+  padding: 0 0 0 22px;
+  background: url(leer.png) no-repeat left center;
+}
+.info {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #669933;
+    padding: 0 0 0px 22px;
+    background: none;
+}
+.info:hover {
+
+    background: url(info.png) no-repeat left center;
+}
+
+.ayuda {     cursor: pointer;
+    margin-left: 5px;
+    background: url(help.png) no-repeat left center;
+}
+
+.inf {
+  border: #669900 1px solid;
+  padding: 4px;
+  font-size: 12px;
+    height: 30px;
+    color: #669900;
+    background:#FEFEF1 url(backinf.png) 50% 50%;
+                -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  -o-border-radius:5px;
+  border-radius:5px;
+}
+.aviso {
+  border: #FAD42E 1px solid;
+  padding: 4px;
+  font-size: 12px;
+    height: 30px;
+    color: #363636;
+    background:#FEFEF1 url(backaviso.png) 50% 50%;
+                -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  -o-border-radius:5px;
+  border-radius:5px;
+}
+.alerta {
+  border: #CD0A0A 1px solid;
+  padding: 4px;
+  font-size: 12px;
+    height: 30px;
+    color: #CD0A0A;
+    background:#FEF6F3 url(backalert.png) 50% 50%;
+                -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  -o-border-radius:5px;
+  border-radius:5px;
+}
+/* Div Redondeado Contenido */
+/* Este es el contenedor al que le pondremos bordes redondos */
+div.round{
+  display: table;
+  width: auto;
+   max-width: 98%;
+   min-width: 800px;
+   background: url(../vector.png);
+    border:#C0C0C0 solid 1px;
+    border-radius:16px;
+   /*background-image: url(mosaico.png);*/
+}
+div.round2{
+   width:auto;
+   background:#F4F4F4;
+   /*background-image: url(mosaico.png);*/
+}
+div.rounduser{
+   font-family: 'AldoSemiBold';
+   font-size: 23px;
+   width:auto;
+   background: url(../img/header-texture.png);
+   border-bottom-right-radius:7px;
+   border-bottom-left-radius:7px;
+   -moz-box-shadow: 0px 0px 15px #010;
+   -webkit-box-shadow: 0px 0px 15px #010;
+   box-shadow: 0px 0px 15px #000;
+   /*background-image: url(mosaico.png);*/
+}
+
+div.round2:hover{
+   background:#F0FFF0;
+   /*background-image: url(mosaico.png);*/
+}
+/* En este contenedor va todo lo que queremos mostrar. No le damos margen vertical puesto ese lo generarán los span del borde */
+div.contenidob{
+    text-align: justify;
+   padding:0 15px;
+   padding-bottom:0px;
+}
+div.contenidoforo{
+    text-align: justify;
+   padding:10px 15px;
+   padding-bottom:0px;
+}
+div.title{
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-top: 15px;
+   vertical-align: text-bottom;
+
+   font-family: AldoSemiBold,century gothic;
+   font-size:23px;
+  color: #669900;
+  font-weight: bold;
+
+}
+div.titleforo{
+   padding-left: 15px;
+   padding-right: 15px;
+   vertical-align: text-top;
+    line-height: 1.5em;
+   font-family: Disney,century gothic;
+   font-size:30px;
+  color: #505050;
+  font-weight: bold;
+   text-transform: capitalize;
+
+}
+
+div.fecha{
+  margin-left: 15px;
+  margin-right: 15px;
+   padding-right: 15px;
+   padding-bottom: 2px;
+   vertical-align: text-top;
+    line-height: 1.5em;
+   font-family: Disney,century gothic;
+   font-size:15px;
+  color: #909090;
+  background: #F6F6F6;
+
+}
+
+div.titleband{
+  background-image: url(degraband.png);
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-bottom: 12px;
+      margin-bottom: 12px;
+
+   vertical-align: text-top;
+    line-height: 1em;
+   font-family: Disney,century gothic;
+   font-size:15px;
+  color: #FFFFFF;
+  font-weight: bold;
+
+}
+
+/* Generamos los estilos de las span, los cuales contendrán las imágenes GIF */
+span.top, span.bottom, span.topband, span.topuser, span.bottomuser{
+   width:100%;
+   height:8px; /* El alto debe ser la mitad de alto de la imagen GIF */
+   display:block;
+}
+/* A continuación viene el verdadero truco, la posición de las imágenes de fondo es importante*/
+span.top {
+   background:url(LC.png) top left no-repeat;
+}
+span.bottom{
+   background:url(LC.png) bottom left no-repeat;
+}
+span.topuser {
+   background:url(LC.png) top left no-repeat;
+   background-color: #959595;
+}
+span.bottomuser{
+   background:url(LC.png) bottom left no-repeat;
+   background-color: #959595;
+}
+span.topband {
+   background:url(LC.png) top left no-repeat;
+   background-color: #BFBFBF;
+
+}
+
+span.top span, span.bottom span, span.topband span, span.topuser span, span.bottomuser span{
+   width:8px; /* De acuerdo al tamaño de la imagen GIF */
+   height:8px; /*De acuerdo al tamaño de la imagen GIF */
+   float:right;
+   font-size:6px; /* Esto es para IE6, que no respeta el height del span si el tamaño de letra es mayor a este  */
+}
+span.top span, span.topband span, span.topuser span{
+   background:url(RC.png) top right no-repeat;
+}
+span.bottom span, span.bottomuser span{
+   background:url(RC.png) bottom right no-repeat;
+}
+
+/* TEXT */
+@font-face {
+ font-family: Disney;
+ src: url("../font/Ubuntu-R.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: Disney;
+ src: url("../font/Ubuntu-R.ttf") /* TTF file for CSS3 browsers */
+}
+
+#miBoton{ text-shadow: 1px 1px 1px #CCCCFF;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline;
+    padding: 5px;
+     height:2.3em;
+    /*height: 2.3em;border: none;*/
+    border: 1px solid #000000;
+    background: url(degra.png) ;
+    color: #000000;
+        -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -o-border-radius:3px;
+  border-radius:3px;
+}
+#miBoton:hover{
+    border: 1px solid #0066CC;
+    color: #0066CC;
+}
+#miBoton.current{
+    border: 1px solid #CC0000;
+    color: #CC0000;
+}
+
+#miBotonNorm{  text-shadow: 1px 1px 1px #CCCCFF;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    /*font-weight: bold;*/
+    display: inline;
+    padding: 5px;
+     height:2.3em;
+    /*height: 2.3em;border: none;*/
+    border: 1px solid #000000;
+    background: url(degra.png) ;
+    color: #000000;
+            -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -o-border-radius:3px;
+  border-radius:3px;
+}
+#miBotonNorm:hover{
+    border: 1px solid #0066CC;
+    color: #0066CC;
+}
+
+
+
+
+
+
+.alert {
+   font-family: Disney,century gothic;
+   font-size:13px;
+  color: #CC0000;
+  }
+
+.text {
+   font-family: Disney,century gothic;
+   font-size:18px;
+  color: #707070;
+  }
+
+.desing {
+   font-family:  Verdana, Arial, Helvetica, sans-serif;
+   font-size:10px;
+  color: #FFFFFF;
+  padding-bottom: -15px;
+  }
+
+.texttab {
+   font-family: Disney,century gothic;
+   font-size:20px;
+  color: #FFFFFF;
+}
+
+.rmenu_item {
+	background-image: url(../img/menu_bg.gif);
+	background-repeat: repeat-x;
+	padding-top: 9px;
+	height: 8px;
+	margin-left: 2px;
+	padding-right: 2px;
+}
+
+.titulo
+{
+  /*color:#CCFF66;*/
+   font-family:Disney,century gothic;
+   font-size:18px;
+   font-weight: bold;
+}
+
+.tpag
+{
+  font-family:Disney,century gothic;
+  /*font-weight: bold;*/
+  color:#000000;
+  font-size:15px;
+/*text-shadow: 0.1em 0.1em 0.05em #333;*/
+
+}
+
+.textob
+{
+  font-family:Disney,century gothic;
+  color:#0036C4;
+  font-size:18px;
+/*text-shadow: 0.1em 0.1em 0.05em #333;*/
+
+}
+
+.texto
+{
+	font-family:Disney,century gothic;
+    color:#000000;
+    font-size:15px;
+    /*font-weight: bold;*/
+}
+
+/* LINKS */
+a.rmenu_link, a.rmenu_link:visited{
+	color:#0066CC;
+    font-family:Disney;
+    font-size:15px;
+	background-color: inherit;
+	text-decoration:none;
+	font-weight:bold;
+	text-transform: capitalize;
+}
+a.rmenu_link:hover{
+	color: #0099FF;
+    font-family:Disney,century gothic;
+    font-size:15px;
+	background-color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+a.titulotem,a.titulotem:visited{
+     padding-left: 15px;
+   padding-right: 15px;
+   vertical-align: text-top;
+    line-height: 1.5em;
+   font-family: Disney,century gothic;
+   font-size:30px;
+  color: #505050;
+  font-weight: bold;
+   text-transform: capitalize;
+}
+a.titulotem:hover{
+  color: #0099FF;
+}
+a.autor, a.autor:visited{
+	color:#0099FF;
+}
+a.autor:hover{
+	color: #0066CC;
+    text-decoration: underline;
+
+}
+a.comentario{
+	color:#0099FF;
+
+}
+a.comentario:hover{
+	color: #0066CC;
+    text-decoration: underline;
+
+}
+a.linky, a.linky:visited{
+	color:#003399;
+    font-family:Disney;
+    font-size:12px;
+	background-color: inherit;
+	text-decoration:none;
+	/*font-weight:bold;*/
+	text-transform: capitalize;
+}
+a.linky:hover{
+	color: #CC0033;
+    font-family:Disney,century gothic;
+    font-size:12px;
+	background-color: inherit;
+	text-decoration: underline;
+	/*font-weight: bold;*/
+	text-transform: capitalize;
+}
+.linkpag, .linkpag:visited{
+	color:#012F67;
+    font-size:16px;
+	text-decoration:none;
+	text-transform: capitalize;
+}
+.linkpag:hover{
+	color: #CC0000;
+    *background: #CCCCCC;
+}
+
+a.linktag, a.linktag:visited,a.linktag:hover{
+    text-decoration:none;
+	color:#000000;
+}
+a.linktag:hover{
+	color:#FF0000;
+}
+a.boxclose{
+    float:right;
+    width:30px;
+    height:30px;
+    background:transparent url(../img/cancel.png) repeat top left;
+    margin-top:-30px;
+    margin-right:-25px;
+    cursor:pointer;
+}
+a.boxclose:hover{
+    background:transparent url(../img/cancel2.png) repeat top left;
+}
+
+
+/* Efectos
+@-moz-keyframes blur{
+	0%{
+		opacity: 0;
+		text-shadow: 0px 0px 40px #fff;
+	}
+	50%{
+		opacity: 0.5;
+		text-shadow: 0px 0px 10px #fff;
+	}
+	100%{
+		opacity: 1;
+		text-shadow: 0px 0px 1px #fff;
+	}
+}
+@-webkit-keyframes blur{
+	0%{
+		opacity: 0;
+		text-shadow: 0px 0px 40px #fff;
+	}
+	50%{
+		opacity: 0.5;
+		text-shadow: 0px 0px 10px #fff;
+	}
+	100%{
+		opacity: 1;
+		text-shadow: 0px 0px 1px #fff;
+	}
+}
+@-ms-keyframes blur{
+	0%{
+		opacity: 0;
+		text-shadow: 0px 0px 40px #fff;
+	}
+	50%{
+		opacity: 0.5;
+		text-shadow: 0px 0px 10px #fff;
+	}
+	100%{
+		opacity: 1;
+		text-shadow: 0px 0px 1px #fff;
+	}
+}
+@keyframes blur{
+	0%{
+		opacity: 0;
+		text-shadow: 0px 0px 40px #fff;
+	}
+	50%{
+		opacity: 0.5;
+		text-shadow: 0px 0px 10px #fff;
+	}
+	100%{
+		opacity: 1;
+		text-shadow: 0px 0px 1px #fff;
+	}
+}
+
+.parpadeo {
+-moz-animation: blur 0.5s infinite alternate;
+-webkit-animation: blur 0.5s infinite alternate;
+-ms-animation: blur 0.5s infinite alternate;
+animation: blur 0.5s infinite alternate;
+}
+*/
+/* Firefox Keyframe Animation
+@-moz-keyframes pulse{
+	0%{		box-shadow:0 0 5px #008aff;}
+	50%{	box-shadow:0 0 15px #008aff;}
+	100%{	box-shadow:0 0 5px #008aff;}
+} */
+
+/* Webkit keyframe animation
+@-webkit-keyframes pulse{
+	0%{		box-shadow:0 0 5px #008aff;}
+	50%{	box-shadow:0 0 15px #008aff;}
+	100%{	box-shadow:0 0 5px #008aff;}
+} */

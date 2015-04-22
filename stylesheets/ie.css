@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+/*
+Author: wardragoon
+*/
+
+
+div.logo {  background-color: #012F67;
+    margin-left:91px;
+    margin-top:0px;
+background-image:url('../escudo.png');
+background-repeat:no-repeat;
+background-position: right bottom;
+}
+div.shield {
+background-image:url('../real.png');
+background-repeat:no-repeat;
+background-position: left bottom;
+}
+
+

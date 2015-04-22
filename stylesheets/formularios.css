@@ -1,0 +1,37 @@
+input.ico,textarea.ico{
+  background-color: #FFFFFF;
+  height: 18px;
+  padding-left: 33px;
+  border:  solid 1px #9F9F9F;
+  font-size:13px;
+  font-family: Disney;
+  color: #9F9F9F;
+    -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  -o-border-radius:5px;
+  border-radius:5px;
+}
+textarea.ico{
+  height: 100px;
+}
+
+.ico:hover,.ico:focus{
+  color: #000000;
+    border:  solid 1px #000000;
+}
+.imgname{
+  background: url(name.png) no-repeat;
+}
+
+.imgmail{
+  background: url(correo.png) no-repeat;
+}
+.imgtel{
+  background: url(tel.png) no-repeat;
+}
+.imgmsj{
+  background: url(msj.png) no-repeat;
+}
+.imgcap{
+  background: url(cap.png) no-repeat;
+}

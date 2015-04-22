@@ -1,0 +1,40 @@
+/* este es el rectángulo total de la ventana */
+     #thumbBox { 
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: auto;
+          padding: 10px; /* el ancho del borde */
+          padding-bottom: 0;
+          background: #313131; /* el color de fondo */
+          visibility: hidden;
+          z-index: 10;
+          cursor: hand;
+          cursor: pointer;
+     }
+/* este es el rectángulo del pie de página */
+     #thumbBox .footerbar {
+          /* propiedades del texto "CERRAR" */
+          font: bold 16px Tahoma;
+          letter-spacing: 5px;
+          line-height: 1.1em;
+          color: white;
+          padding: 5px 0;
+          text-align: right;
+          /* propiedades que podemos agregar: background-color, border */
+     }
+/* es el rectángulo interior que contendrá la imagen y el eventual título */
+     #thumbBox #thumbImage {
+          background-color: white; /* el color de fondo */
+          /* podemos agregar otras propiedades, por ejmeplo, para las fuentes de los textos */
+     }
+/* es la advertencia de carga que se muestra antes de abrirse la ventana */
+     #thumbLoading {
+          position: absolute;
+          visibility: hidden;
+          border: 1px solid black; /* el borde */
+          background-color: #EFEFEF; /* el color de fondo */
+          padding: 5px; /* márgenes */
+          z-index: 5;
+          /* podemos agregar otras propiedades para las fuentes, etc */
+     }

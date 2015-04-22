@@ -1,0 +1,163 @@
+@CHARSET "UTF-8";
+/*
+Author: Adrian Mato
+Author URI: http://www.yensdesign.com & http://web.ontuts.com
+*/
+
+/******* GENERAL RESET *******/
+
+ul{
+    list-style: none;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+.clear{
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    line-height: 0;
+}
+.clearfix{
+    overflow: hidden;
+}
+
+/******* /GENERAL RESET *******/
+
+/******* GENERAL *******/
+.tabtit{
+  font-weight: bold;
+    color: #FF9900;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: -20px;
+    line-height:1em;
+    vertical-align:middle;
+    height:70px;
+    padding:20px 10px 10px 150px;
+
+}
+/******* /GENERAL *******/
+
+/******* menu *******/
+#container{
+    margin:1em auto;
+    width:auto; /* tamaño carpeta */
+}
+#container ul{
+    list-style:none;
+    list-style-position:outside;
+}
+#container ul.menu li{
+    float:left;
+    margin-left:-40px;
+    margin-right:48px; /* separacion pestañas */
+    margin-bottom:-1px;
+}
+#container ul.menu li{
+    font-weight:700;
+    display:block;
+    padding:8px 15px; /* espacio texto pestañas */
+    background:#CBE4E4;/* color pestaña inactiva */
+    margin-bottom:-1px;
+    border:1px solid #3e3e3e;
+    border-width:1px 1px 1px 1px;
+    position:relative;
+    color:#336699;
+    cursor:pointer;
+    border-radius:3px 3px 0 0;
+    -moz-border-radius:3px 3px 0 0;
+    -webkit-border-radius:3px 3px 0 0;text-shadow: 1px 1px 1px #FFFFFF;
+}
+#container ul.menu li:hover{
+    color:#990033;
+    background-image: url(degratab2.png);text-shadow: 1px 1px 1px #FFFFFF;
+}
+#container ul.menu li.active{
+    /*background:#F4F4F4;  color pestaña activa */
+    background-image: url(degratab.png);
+    top:1px;
+    border-bottom:0;
+    color:#CC0000; text-shadow: 0px 0px 1px #FFCC33;
+}
+/******* /menu *******/
+
+/******* CONTENT *******/
+.content{
+    margin:0pt auto;
+     background:#FFFFFF;/* color contenido */
+
+    border:1px solid #3e3e3e;
+    text-align:left;
+    /*padding:1.3em;*/
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size:14px;
+    line-height:2em;
+    color:#000000;    /* color texto */
+    border-radius:0 5px 5px 5px;
+    -moz-border-radius:0 5px 5px 5px;
+    -webkit-border-radius:0 5px 5px 5px;
+    box-shadow:0 0 5px #999999;
+}
+
+/******* /CONTENT *******/
+
+.content.des .tabtit{
+    background:transparent url(../iconos/icon2a.png) no-repeat scroll left top;
+}
+.content.det .tabtit{
+    background:transparent url(../iconos/icon3a.png) no-repeat scroll left top;
+}
+.content.img .tabtit{
+    background:transparent url(../iconos/icon4.png) no-repeat scroll left top;
+}
+.content.vid .tabtit{
+    background:transparent url(../iconos/icon5.png) no-repeat scroll left top;
+}
+.content.pan .tabtit{
+    background:transparent url(../iconos/icon7.png) no-repeat scroll left top;
+}
+
+.content.dat{
+    display:none;
+}
+
+.content.des{
+    display:none;
+}
+
+.content.det{
+    display:none;
+}
+
+.content.img{
+    display:none;
+}
+
+.content.vid{
+    display:none;
+}
+
+.content.pan{
+    display:none;
+}
+.content.con{
+    display:none;
+}
+.content.ubi{
+    display:none;
+}
+.content.pag{
+    display:none;
+}
+.content.arr{
+    display:none;
+}
+.content.cuo{
+    display:none;
+}
+.content.kar{
+    display:none;
+}

@@ -1,0 +1,132 @@
+table.cal {
+	border-collapse: separate;
+	border: 1px solid #9DABCE;
+	margin: 10px auto;
+	font-size: 11px;
+}
+td.cal/*, th */{
+	width: 27px;
+	height: 27px;
+	text-align: center;
+	vertical-align: middle;
+	background: url(../img/cells.png);
+	color: #444;
+	position: relative;
+    	z-index: 500;
+
+}
+th {
+	height: 27px;
+	font-weight: bold;
+	font-size: 11px;
+}
+td:hover, th:hover {
+	background-position: 0px -27px;
+	color: #222;
+}
+td.dia_evento {
+	background-position: 70px 0px;
+	color: white;
+}
+td.dia_evento:hover {
+	background-position: 70px -27px;
+}
+td.padding th.padding{
+	background: url(../img/calpad.jpg);
+}
+
+td.izqdercel{
+	background-position: 27px 0px;
+	color: white;
+}
+.izq{
+  float: left;
+}
+.der{
+  float: right;
+}
+a.izqder, a.izqder:visited
+{
+	/*color:#FFFFFF;*/
+
+    font-size:15px;
+	text-decoration:none;
+	font-weight:bold;
+	text-transform: capitalize;
+}
+a.izqder:hover
+{
+	/*color: #FFCC00; */
+    font-size:15px;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+
+td.hoy {
+	background-position: 35px 0px;
+	color: white;
+}
+td.hoy:hover {
+	background-position: 35px -27px;
+}
+.eventos {
+	position: relative;
+}
+.eventos ul {
+	text-align: left;
+    text-align: justify;
+	position: absolute;
+	display: none;
+	z-index: 1000;
+	padding-top: 15px; padding-left: 15px; padding-right: 15px;
+	background: #E7ECF2 url(../img/popup.png) ;
+	color: white;
+	border: 1px solid #66CCCC;
+	font-size: 15px;
+	width: 250px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-border-radius: 3px;
+	list-style: none;
+	color: #444444;
+	-webkit-box-shadow: 0px 8px 8px #333;
+}
+.eventos li {
+	padding-bottom: 5px;
+}
+.eventos li span {
+	display: block;
+	font-size: 12px;
+	text-align: justify;
+	color: #555;
+}
+.eventos li span.titulo {
+	font-weight: bold;
+	color: #222;
+}
+
+.izqdercel{
+    background-color: #006666 ;
+    font-size: 15px;
+    text-align: center;
+  	background: #E7ECF2 url(../img/head.png);
+    color: #FFFFFF;
+}
+
+.titmesano, .titmesano:hover{
+    text-shadow:1px 1px 1px #000000;
+    width: 140px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  	background: #E7ECF2 url(../img/head.png);
+    color: #F1C70F;
+}
+
+.tablecal{ width: 100%;
+    background-color: #006666 ;
+    background: #606060 url(../img/hea.png) no-repeat;
+}

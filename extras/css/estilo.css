@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+
+a{
+	color: #369;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #E17919;
+}
+
+
+
+ input[type=text], input[type=password], select,textarea{   text-transform: uppercase;
+   border: 1px solid #7D7D7D; color:#336600;
+	font-size: 13px;   background: #FBFBFB;
+	font-family: "Lucida Sans Unicode";
+    padding: 3px;
+        -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -o-border-radius:3px;
+  border-radius:3px;
+}
+ input[type=text]:focus, input[type=password]:focus, select:focus,textarea:focus{
+   border: 1px solid #9AB7E7; color:#003366;
+	font-size: 13px;  background: #F9FBFD;
+	font-family: "Lucida Sans Unicode";
+}
+
+
+img{
+	border: 0px;
+}
+
+#cuerpo{
+	margin: auto;
+	padding: 20px 20px 20px 20px;
+	background-color: #fff;
+}
+
+h1{
+	font-size:1.2em;
+	color: #E17919;
+}
+
+h2{
+	font-size:1.0em;
+	color: #6FA7D1;
+}
+
+h1, h2, p{
+	margin: 0px 0px 20px 0px;
+}
+
+
+td.line{
+ border-left: #3399CC solid 1px;
+}
+
+
+table.formulario{
+	margin: 0px auto 0px auto;
+}
+
+table.formulario td, table.formulario th{
+	padding: 6px;
+	vertical-align: top;
+}
+
+table.formulario thead th{
+	font-weight: normal;
+	color: #6FA7D1;
+	vertical-align: top;
+}
+
+table.formulario tfoot td{
+	text-align: right;
+	vertical-align: top;
+}
+
+
+
+
+
+table.lista thead th:hover{
+  color: #FFCC00;
+/* background: #C1D9FF;*/
+text-shadow: 0px 1px 1px #333333;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+table.lista thead tr .headerSortUp {
+  /*background-image: -moz-linear-gradient(#FFCC66,#FF9900);*/
+   	background: url(up.png) no-repeat  right;
+}
+table.lista thead tr .headerSortDown {
+  /*background-image: -moz-linear-gradient(#FFCC66,#FF9900);*/
+   	background: url(down.png) no-repeat  right;
+}
+
+table.lista{
+	margin: 0px auto 20px auto;
+	border-collapse: collapse;
+}
+
+table.lista td, table.lista th{
+	padding: 6px;
+	vertical-align: top;
+}
+
+table.lista thead tr{ background:  url(../../stylesheets/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png) 50% 50%;
+	font-weight:  bold;    text-shadow: 1px 1px 1px #000000;
+     cursor:  default;
+	color: #FFFFFF;
+	text-align: left;
+	border-bottom: 1px solid #000000;
+	border-top: 1px solid #000000;
+}
+table.lista thead td{  text-shadow: 1px 1px 1px #FFFFFF;  width: 35px; text-align: center;
+	color: #000000;
+}
+
+table.lista tbody tr{
+	border-bottom: 1px solid #3399CC;
+}
+table.lista tbody td.ico{  text-align: center;
+}
+
+table.lista tfoot td{
+	text-align: center;
+	color: #009999;
+	vertical-align: top;
+}
+
+table.lista strong, table.formulario strong{
+	color: #006699;
+	font-weight: normal;
+}
+table.lista tbody tr:hover{    color: #003366;
+ background: url(../../stylesheets/backinf.png) 50% 50%;   }
+
+table.lista tbody tr.eg{    color: #003366;
+ background: url(../../stylesheets/backEG.png) 50% 50%;   }
+ 
+ table.lista tbody tr.bt{    color: #003366;
+ background: url(../../stylesheets/backBT.png) 50% 50%;   }
+ 
+table.lista tbody tr.bd{    color: #003366;
+ background: url(../../stylesheets/backBD.png) 50% 50%;   }
+
+
+table.contenedor{
+	margin: 0px 0px 20px 0px;
+	border-collapse: collapse;
+}
+
+table.contenedor>td, table.contenedor>th{
+	padding: 0px;
+	margin: 0px;
+}
+
+table.contenedor td{
+	vertical-align: top;
+}
+
+.over{
+	background-color: #DDECF7;
+	color: #E17009;
+}
+
+label.error{
+	color: #900;
+	margin: 0px 0px 0px 10px;
+}
