@@ -1,4 +1,3 @@
-
 <link href="css/skins/light_blue.css" rel="stylesheet" type="text/css" media="screen" />
 
 <script type='text/javascript' src='lib/jquery.hoverIntent.minified.js'></script>
