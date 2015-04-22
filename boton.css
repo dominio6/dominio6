@@ -1,5 +1,5 @@
 
-/*CODIGO PARA LOS BOTONES*/
+/*CODIGO PARA LOS BOTONES test*/
 .button{
 	font:15px  sans-serif;
 
@@ -45,24 +45,24 @@
 
 .button:hover{
 	
-	/* Al pasar el ratÛn encima del boton, activara el efecto hover y har· que la posicion del fondo cambie*/	
+	/* Al pasar el rat√≥n encima del boton, activara el efecto hover y har√° que la posicion del fondo cambie*/	
 	background-position:top left;
 	background-position:top left, bottom right, 0 0, 0 0;
 }
 
 .button:active{
-	/* Mover· el boton 1px al cliclearlo
+	/* Mover√° el boton 1px al cliclearlo
     bottom:-2px;*/
 
 }
 
 
-/* HAST AQUI ES LA CONFIGURACION DEL EFECTO, A CONTINUACION VIENE LA CONFIGURACION DE TAMA—O DE LOS BOTONES Y COLORES*/
+/* HAST AQUI ES LA CONFIGURACION DEL EFECTO, A CONTINUACION VIENE LA CONFIGURACION DE TAMA√ëO DE LOS BOTONES Y COLORES*/
 
 
 
-/* Aqui se configura el tamaÒo de los botones, en realidad lo que se configura es el tamaÒo de la letra, pero al configurar el tamaÒo de la letra
-el boton toma el nuevo tamaÒo como referencia, por eso el tamaÒo del boton es mayor o menor*/
+/* Aqui se configura el tama√±o de los botones, en realidad lo que se configura es el tama√±o de la letra, pero al configurar el tama√±o de la letra
+el boton toma el nuevo tama√±o como referencia, por eso el tama√±o del boton es mayor o menor*/
 .button.grande	{ font-size:30px;}
 .button.mediano	{ font-size:18px;}
 .button.chico	{ font-size:15px;}
