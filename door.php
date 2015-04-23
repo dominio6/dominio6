@@ -20,7 +20,7 @@ else{
                 //$subcadena=substr($row["mensaje"], 0, 50);
 
                 /*if($_POST['open']==2){ */
-                $sql = "SELECT * FROM users where pass='".$_POST['pass']."' and nick='".$_POST['user']."'";
+                $sql = "CALL spr_getUsuario('".$_POST['user']."','".$_POST['pass']."');"; //"SELECT * FROM tbl_usuarios where vPassword='".$_POST['pass']."' and vUsuario='".$_POST['user']."'";
                 /*}else{
                 $sql = "SELECT * FROM users where pass='".$_POST['pass']."' and nick='".$_POST['user']."' and cuenta='Alumno'";
                 if(mysql_num_rows(mysql_query($sql))==0){$cuenta="Padre";
@@ -30,12 +30,12 @@ else{
 
                 $result = mysql_query($sql, $link);
                   if ($row = @mysql_fetch_array($result)){
-                    $_SESSION['access']="si";
-                    $_SESSION['nick']=$_POST['user'];
-                    $_SESSION['id']=$row['id'];//$_POST['pass'];
-                    $_SESSION['foto']=$row['foto'];
-                    $_SESSION['cuenta']=$row['cuenta'];
-                    $_SESSION['nombre']=$row['nombre']." ".$row['apep']." ".$row['apem'];
+                    $_SESSION['access'] = "si";
+                    $_SESSION['nick'] = $row['vUsuario'];
+                    $_SESSION['id'] = $row['idUsuario'];//$_POST['pass'];
+                    $_SESSION['foto'] = $row['foto'] == "" ? "img/D6.png" :$row['foto'];
+                    $_SESSION['cuenta'] = $row['vRol'] == "" ? "Desconocido" : $row['vRol'];
+                    $_SESSION['nombre'] = $row['vNombre']." ".$row['apep']." ".$row['apem'];
                   header("Location: call_frmWelcome.php");
 				  //require('menu.php');
                   }

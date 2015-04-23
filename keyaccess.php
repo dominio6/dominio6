@@ -6,8 +6,8 @@ include_once("xxx.php");
 	$db_server			= "localhost";
 	$db_username		= "root";
 	$db_password		= "";
-    $basedd             = "cmam";
-$filename 			= "backupCMAM.sql";
+    $basedd             = "dominio6";
+$filename 			= "backupD6.sql";
 $word=50;
 $mailwz="contacto@dominio6.com";
 //if(size()==10192374){
