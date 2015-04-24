@@ -20,7 +20,7 @@ else{
                 //$subcadena=substr($row["mensaje"], 0, 50);
 
                 /*if($_POST['open']==2){ */
-                $sql = "CALL spr_getUsuario('".$_POST['user']."','".$_POST['pass']."');"; //"SELECT * FROM tbl_usuarios where vPassword='".$_POST['pass']."' and vUsuario='".$_POST['user']."'";
+                $sql = "CALL spr_getUsuarios('".$_POST['user']."','".$_POST['pass']."');"; //"SELECT * FROM tbl_usuarios where vPassword='".$_POST['pass']."' and vUsuario='".$_POST['user']."'";
                 /*}else{
                 $sql = "SELECT * FROM users where pass='".$_POST['pass']."' and nick='".$_POST['user']."' and cuenta='Alumno'";
                 if(mysql_num_rows(mysql_query($sql))==0){$cuenta="Padre";

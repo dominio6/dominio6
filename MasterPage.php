@@ -8,10 +8,10 @@
 <link href="icon.png" type="image/x-icon" rel="shortcut icon" />
 <title>.:.Dominio 6.:.</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <script src="lib/jquery.js" type="text/javascript" charset="utf-8"></script>
- <link rel="stylesheet" type="text/css" href="promptumenu/promptumenu.css" />
- <script type="text/javascript" src="promptumenu/jquery.promptumenu.min.js"></script>
-		<link rel="stylesheet" href="boton.css" type="text/css" media="screen" />
+<script src="lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="promptumenu/promptumenu.css" />
+<script type="text/javascript" src="promptumenu/jquery.promptumenu.min.js"></script>
+<link rel="stylesheet" href="boton.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="stylesheets/main.css" type="text/css" media="screen" />
     <!--[if IE]>
         <link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen" />
@@ -250,7 +250,7 @@ background-image:  url(radio_checked.gif);
 
 <? if($_SESSION['access']=="si"){ ?>
  <div id='apDiv6' style='visibility: hidden;' >
-<?php include($page_content);?>
+<? include($page_content);?>
  </div>
 <? }else{ ?>
   <br /><br /><br />

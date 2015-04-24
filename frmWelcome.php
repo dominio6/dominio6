@@ -65,17 +65,88 @@
 			}
 .pic {
 transition: all .2s ease-in-out;
-filter: gray; /* IE6-9 */
-width: 80px;
--webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+width: 70px;
+height: 70px;
+    -webkit-filter: sepia(1);
+    -webkit-filter: sepia(100%);
+    -moz-filter: sepia(100%);
+    -ms-filter: sepia(100%);
+    -o-filter: sepia(100%);
+    filter: sepia(100%);
 }
 
 .pic:hover { transform: scale(1.5)
 rotate(45deg);
+    -webkit-filter: grayscale(0);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
 filter: none;
--webkit-filter: grayscale(0%);
 }
 
+.picblock {      transition: all .2s ease-in-out;
+width: 50px;
+height: 70px;
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+     content: url('img/candado.png');
+}
+
+.picblock:hover {
+width: 50px;
+height: 70px;
+     -webkit-filter: grayscale(0);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+ content: url('img/candado.png');
+}
+
+.fadein{
+        -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 		</style>
       <div class="round" align="left">
 
@@ -87,10 +158,10 @@ filter: none;
 				<ul>
 
                 <?
-                $sql = "CALL spr_getModulos('".$_GET["idM"]."');"; //"SELECT * FROM tbl_usuarios where vPassword='".$_POST['pass']."' and vUsuario='".$_POST['user']."'";
+                $sql = "CALL spr_getModulos('".$_SESSION['id']."','".($_GET["idM"] == '' ? 0 : $_GET["idM"])."');"; //"SELECT * FROM tbl_usuarios where vPassword='".$_POST['pass']."' and vUsuario='".$_POST['user']."'";
                 $result = mysql_query($sql, $link);
                 while($row = mysql_fetch_row($result)) {
-                   echo "<li> <center><a href='call_frmWelcome.php?idM=".$row[0]."'><img class='pic' src='".($row[4] == "" ? "img/D6.png" : $row[4])."' alt='".$row[2]."' title='".$row[5]."' /><br />".$row[2]."</a></center></li> "; }
+                   echo "<li class='fadein'> <center>".($row[8] == 'si' ? ("<a href='".($row[7] == 'no' ? "call_frmWelcome.php?idM=".$row[0] : $row[3])."'><img class='pic' src='".($row[4] == "" ? "img/D6.png" : $row[4])."' alt='".$row[2]."' title='".$row[5]."' /><br />".$row[2]."</a>"):("<a href='#' style='color:red;'><img class='picblock' src='".($row[4] == "" ? "img/D6.png" : $row[4])."' alt='BLOQUEADO' title='BLOQUEADO' /><br />".$row[2]."</a>"))."</center></li> "; }
                 ?>
 				   <!--	<li> <a href="http://www.google.com"><img class="pic" src="http://natrixnatrix89.net/72PNG/Books.png" alt="" title="auqi" /></a></li>
 					<li><img class="pic" src="http://natrixnatrix89.net/72PNG/Browser.png" alt="" /></li>

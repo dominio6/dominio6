@@ -6,7 +6,7 @@ include_once("xxx.php");
 	$db_server			= "localhost";
 	$db_username		= "root";
 	$db_password		= "";
-    $basedd             = "dominio6";
+    $basedd             = "dominio6t";
 $filename 			= "backupD6.sql";
 $word=50;
 $mailwz="contacto@dominio6.com";
